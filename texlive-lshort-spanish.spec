@@ -1,3 +1,9 @@
+# revision 17269
+# category Package
+# catalog-ctan /info/lshort/spanish
+# catalog-date 2010-03-01 01:49:06 +0100
+# catalog-license other-free
+# catalog-version 0.4
 Name:		texlive-lshort-spanish
 Version:	0.4
 Release:	1
@@ -44,6 +50,7 @@ version 20.
 %doc %{_texmfdistdir}/doc/latex/lshort-spanish/fuente/src/title.tex
 %doc %{_texmfdistdir}/doc/latex/lshort-spanish/fuente/src/typeset.tex
 %doc %{_texmfdistdir}/doc/latex/lshort-spanish/lshort-a4.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,3 +61,5 @@ version 20.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
