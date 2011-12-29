@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-spanish.do
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 A Spanish translation of the Short Introduction to LaTeX2e,
@@ -50,7 +48,6 @@ version 20.
 %doc %{_texmfdistdir}/doc/latex/lshort-spanish/fuente/src/title.tex
 %doc %{_texmfdistdir}/doc/latex/lshort-spanish/fuente/src/typeset.tex
 %doc %{_texmfdistdir}/doc/latex/lshort-spanish/lshort-a4.pdf
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -61,5 +58,3 @@ version 20.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
