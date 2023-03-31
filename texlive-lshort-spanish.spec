@@ -1,6 +1,6 @@
 Name:		texlive-lshort-spanish
 Version:	35050
-Release:	1
+Release:	2
 Summary:	Short introduction to LaTeX, Spanish translation
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/lshort/spanish
