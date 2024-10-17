@@ -3,7 +3,7 @@ Version:	35050
 Release:	2
 Summary:	Short introduction to LaTeX, Spanish translation
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/lshort/spanish
+URL:		https://www.ctan.org/tex-archive/info/lshort/spanish
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-spanish.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-spanish.doc.r%{version}.tar.xz
